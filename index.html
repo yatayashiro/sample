@@ -87,27 +87,18 @@ function onYouTubeIframeAPIReady() {
       playsinline: 1,
       rel: 0,
       autohide:0,
-     
     },
     events: {
       'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
     }
   });
 }
 
 function onPlayerReady(event) {
-  event.target.mute();
+  event.target.unMute();
   event.target.playVideo();
 }
 
-function onPlayerStateChange(event) {
-  var ytStatus = event.target.getPlayerState();
-  if (ytStatus == YT.PlayerState.ENDED) {
-    player.mute();
-    player.playVideo();
-  }
-}
 
 </script>
 
