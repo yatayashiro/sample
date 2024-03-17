@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+   
+<head>
+  <meta charset="utf-8">
+  <title>八咫烏の社</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+ 
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+
+ 
+ <link rel="stylesheet" href="ok.min.css" />
+
+<style>
+:root {
+  color-scheme: light dark;
+}
+
+body{font-size: 1.15rem;}
+
+.main-movie {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.main-movie iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.button{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  text-align: center;
+  font-size: xx-large;
+  font-family: serif;
+}
+
+.button a{
+  border-radius: 1rem;
+  padding: 1em;
+  color:#000;
+}
+.button a img{
+  max-height: 20vh;
+}
+</style>
+</head>
+ 
+<body>
+ 
+<header style="text-align: center;">
+	<h1>八咫烏の社</h1>
+	あなたは⭕️番目の参拝者です
+	<img src="images/building_yasukuni_jinja.png" style="max-height: 50vh;">
+</header>
+<section>
+   <div class="button">
+	<a href="" style="background: #ffe5ea;">
+	  <img src="images/saisenbako_denshi_smartphone.png" alt="神頼み">
+	  神頼みする
+	</a>
+	<a href="" style="background: #d3fbff;">
+	  <img src="images/tamakushi_hosiimo.png" alt="干し芋がついた玉串">
+	  干し芋を奉奠
+	</a>
+   </div>
+</section>
+<br><br><br><br><br>
+<hr>
+
+<section>
+
+<div class="main-movie">
+  <div id="js-main-movie"></div>
+</div>
+<script>
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('js-main-movie', {
+    videoId: 'Qp3b-RXtz4w', 
+    height: '1080',
+    width: '1920',
+    playerVars: {
+      controls: 1,
+      autoplay: 1,
+      disablekb:1,
+      enablejsapi: 1,
+      iv_load_policy: 3,
+      playsinline: 1,
+      rel: 0,
+      autohide:0,
+      startSeconds:50,
+    },
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+function onPlayerReady(event) {
+  event.target.mute();
+  event.target.playVideo();
+}
+
+function onPlayerStateChange(event) {
+  var ytStatus = event.target.getPlayerState();
+  if (ytStatus == YT.PlayerState.ENDED) {
+    player.mute();
+    player.playVideo();
+  }
+}
+
+</script>
+</section>
+
+<section>
+
+<h1>自己紹介</h1>
+<dl>
+  <dt>なまえ</dt>
+  <dd>▶︎ 八咫烏 やたがらす</dd>
+  <dt>誕生日</dt>
+  <dd>▶︎ 5月30日 ♊️</dd>
+</dl>
+
+<ul>
+  <li>7人の子がおりますん。愚息は正道を求めて。</li>
+  <li>飽きるまでネットでお遊戯。飽きたらさいなら</li>
+  <li>作品はぜんぶ<mark>AI生成</mark> DAZOーー♡╰(*´︶`*)╯♡</li>
+  <li>超絶ブラコン。アニキの小宇宙はすごいんダゾ⭐️<br>海老フライは甲〜殻〜類〜……？</li>
+  <li>美大生なんでーコンテクストコンテクスト<br>課題 講評ガッタメラータファイングラタマムサ。おたくうわぁ</li>
+  <li>何も生み出さない人間は早急に交尾し<u>少子化対策に貢献</u>しましょう。
+  <li><b>友達は自分で選びます</b>。はよ描かせろ</li>
+</ul>
+
+
+<details>
+  <summary>続きを読む</summary>
+  　（（（もっと知りたい）））<br><br><br>
+   酸っぱい葡萄になっちゃうよー<br>猫をも殺すよ<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</details>
+
+</section>
+
+<hr>
+
+<section>
+	<h2>誰かしらんの作品</h2>
+	<ol>
+	  <li>きせかえ遊戯くん</li>
+	  <li>展示用のPDF（ムウ・貴鬼・墓場の亡霊）</li>
+	  <li>折り本（生業）</li>
+	</ol>
+</section>
+<section>
+	<h2>感想</h2>
+	<ul>
+	  <li>まんだらけZENBU（16・96）</li>
+	</ul>
+</section>
+
+<section>
+	<h2>ドクダミなう</h2>
+</section>
+
+<hr>
+
+<section style="display: flex;">
+	<img src="IMG_2629.png" style="max-width: 35%;">
+	<img src="IMG_2629.png" style="max-width: 35%;transform: scaleX(-100%);filter: blur(5px);">
+</section>
+
+<hr>
+
+<section>
+リンクフリー。リンクをご希望の方は<a href="">GitHub</a>までお問い合わせ願います。
+
+<h2>I was in love.</h2>
+リンク
+</section>
+
+<br><br><br><br><br>
+
+<aside style="text-align:center;">
+	<script>document.write(navigator.userAgent);</script>
+</aside>
+
+<footer>
+<p style="text-align:center;">
+どれがウソでどれがホント<br>
+あなたは誰はしたわ<br>
+</p>
+
+</footer>
+<p>
+<script>
+var date = new Date();
+
+var YYYY = date.getFullYear(); //年
+var MM = ("00" + (date.getMonth()+1)).slice(-2); //月
+var DD = ("00" + (date.getDate())).slice(-2); //日
+var hh = ("00" + (date.getHours())).slice(-2); //時間
+var mm = ("00" + (date.getMinutes())).slice(-2); //分
+var ss = ("00" + (date.getSeconds())).slice(-2); //秒
+
+	document.write(`Lastmod: ` + YYYY + "-" + MM + "-" + DD + " " + hh + ":" + mm + ":" + ss );
+document.write(`<br><small>©︎ ` + YYYY + ` 八咫烏</small>`);
+</script>
+
+
+</p>
+
+</body>
+ 
+</html>
