@@ -94,9 +94,9 @@ function onYouTubeIframeAPIReady() {
     }
   });
 }
-
 function onPlayerReady(event) {
-  event.target.unMute();
+  event.target.mute();
+  event.target.setVolume(100);
   event.target.playVideo();
 }
 
