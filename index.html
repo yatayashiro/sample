@@ -73,8 +73,9 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 var player;
 function onYouTubeIframeAPIReady() {
-  player = new YT.Player('js-main-movie', {
+  player = new YT.Player.unMute('js-main-movie', {
     videoId: 'Qp3b-RXtz4w', 
+ 　　startSeconds:50,
     height: '1080',
     width: '1920',
     playerVars: {
@@ -86,7 +87,7 @@ function onYouTubeIframeAPIReady() {
       playsinline: 1,
       rel: 0,
       autohide:0,
-      startSeconds:50,
+     
     },
     events: {
       'onReady': onPlayerReady,
